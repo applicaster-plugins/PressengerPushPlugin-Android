@@ -48,7 +48,6 @@ app/src/main/res/
 app/src/main/assets/applicaster.properties
 app/src/main/assets/componentsMetaData.properties
 app/src/main/assets/modularapp.properties
-gradle/wrapper/gradle-wrapper.properties
 fonts/
 
 # Javascript packages and configuration
