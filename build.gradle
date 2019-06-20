@@ -67,7 +67,7 @@ dependencies {
 
     implementation 'com.android.support:appcompat-v7:27.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    api 'com.pressenger:sdk:4.8.0'
+    // api 'com.pressenger:sdk:4.8.0'
 }
 
 repositories {
