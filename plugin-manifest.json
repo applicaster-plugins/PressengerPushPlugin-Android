@@ -11,14 +11,14 @@
   "platform": "android",
   "author_name": "Juan Hernandez",
   "author_email": "j.hernandez@applicaster.com",
-  "manifest_version": "0.0.1",
+  "manifest_version": "0.0.2",
   "name": "PressengerPushPlugin",
   "description": "Pressenger Push Provider Plugin for Zapp Apos",
   "type": "push_provider",
   "identifier": "ZappPushPluginPressenger",
   "ui_builder_support": true,
   "dependency_name": "com.applicaster:PressengerPushPlugin-Android",
-  "dependency_version": "0.0.1",
+  "dependency_version": "0.0.2",
   "whitelisted_account_ids": [
     "5a53d5ec9349a1000ecadf69"
   ],
