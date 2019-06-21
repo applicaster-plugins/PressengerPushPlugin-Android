@@ -1,2 +1,21 @@
+
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.applicaster.pressengerpushplugin" />
+package="com.applicaster.pressengerpushplugin">
+
+<!-- Required to allow the app to send events and user profile information -->
+<uses-permission android:name="android.permission.INTERNET" />
+<!-- Recommended so that CleverTap knows when to attempt a network call -->
+<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+<application android:allowBackup="true">
+    <receiver android:name=".PressengerReceiver">
+        <intent-filter>
+            <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+            <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+            <category android:name="${applicationId}" />
+        </intent-filter>
+    </receiver>
+</application>
+</manifest>
