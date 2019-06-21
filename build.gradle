@@ -44,6 +44,7 @@ repositories {
     jcenter()
     mavenCentral()
     maven { url 'https://jitpack.io' }
+    maven { url 'https://maven.pressenger.com' }
     maven { // Applicaster
         credentials {
             username System.getenv("MAVEN_USERNAME")
@@ -70,10 +71,6 @@ dependencies {
         exclude group:    'com.google.firebase', module: 'firebase-messaging'
         exclude group:    'com.github.bumptech.glide', module: 'glide'
     }
-}
-
-repositories {
-    mavenCentral()
 }
 
 apply from: 'gradle/gradle-bintray-push.gradle'
