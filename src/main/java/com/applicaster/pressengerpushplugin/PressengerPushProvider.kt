@@ -8,30 +8,31 @@ import com.applicaster.plugin_manager.push_plugin.listeners.PushTagRegistrationI
 
 class PressengerPushProvider : PushContract {
     override fun registerPushProvider(context: Context?, registerID: String?) {
-        TODO("not implemented")
+        // todo: implement this
     }
 
     override fun initPushProvider(context: Context?) {
-        TODO("not implemented")
+        // todo: implement this
     }
 
     override fun setPluginParams(params: MutableMap<Any?, Any?>?) {
-        TODO("not implemented")
+        // todo: implement this
     }
 
     override fun addTagToProvider(context: Context?, tag: MutableList<String>?, pushTagRegistrationListener: PushTagRegistrationI?) {
-        TODO("not implemented")
+        // todo: implement this
     }
 
     override fun removeTagToProvider(context: Context?, tag: MutableList<String>?, pushTagRegistrationListener: PushTagRegistrationI?) {
-        TODO("not implemented")
+        // todo: implement this
     }
 
     override fun getPluginType(): PushPluginsType {
-        TODO("not implemented")
+        // todo: implement this (testing with urbanAirship)
+        return PushPluginsType.urbanAirship
     }
 
     override fun getTagList(context: Context?, listener: PushTagLoadedI?) {
-        TODO("not implemented")
+        // todo: implement this
     }
 }
