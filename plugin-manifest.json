@@ -4,7 +4,9 @@
     "class_name": "com.applicaster.pressengerpushplugin.PressengerPushProvider"
   },
   "dependency_repository_url": [
-
+    {
+      "url": "https://maven.pressenger.com"
+    }
   ],
   "platform": "android",
   "author_name": "Juan Hernandez",

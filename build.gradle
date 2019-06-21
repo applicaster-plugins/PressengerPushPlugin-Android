@@ -43,7 +43,6 @@ repositories {
     google()
     jcenter()
     mavenCentral()
-    maven { url 'https://maven.pressenger.com' }
     maven { url 'https://jitpack.io' }
     maven { // Applicaster
         credentials {
@@ -60,14 +59,17 @@ dependencies {
     // Check if an open SDK is defined - if not use the closed one.
     def devSDK = findProject(':applicaster-android-sdk')
     if (devSDK != null) {
-        implementation project(':applicaster-android-sdk')
+        api (project(":applicaster-android-sdk"))
     } else {
-        implementation 'com.applicaster:applicaster-android-sdk:2.33.0'
+        api ("com.applicaster:applicaster-android-sdk:2.33.0")
     }
 
-    implementation 'com.android.support:appcompat-v7:27.0.2'
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
-    // api 'com.pressenger:sdk:4.8.0'
+    implementation ("com.pressenger:sdk:4.8.0")  {
+        exclude group:    'com.google.firebase', module: 'firebase-iid'
+        exclude group:    'com.google.firebase', module: 'firebase-messaging'
+        exclude group:    'com.github.bumptech.glide', module: 'glide'
+    }
 }
 
 repositories {
